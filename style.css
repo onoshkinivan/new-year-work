@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+.wrapper {
+    height: 100vh;
+    background-image: url(img/new\ year\ village.webp);
+    background-size: cover;
+    background-position: bottom right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+}
+
+.active {
+    display: none;
+}
+
+.visible {
+    width: 500px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.visible__img {
+    width: 100%;
+}
+
+.visible_text {
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    width: 500px;
+    position: relative;
+    display: none;
+}
+
+.hidden__img {
+    width: 400px;
+}
+
+.hidden_text {
+    position: absolute;
+    top: -40px;
+    right: -50px;
+    background-color: #006aa6;
+    padding: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.form {
+    align-self: flex-end;
+    background-color: green;
+    padding: 50px;
+    border-radius: 10px;
+    display: none;
+
+}
+
+.form__row {
+    margin-bottom: 10px;
+}
+
+.input__name {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.input {
+    outline: none;
+    padding: 5px;
+    border-radius: 2px;
+    border: none;
+    font-size: 10px;
+}
+
+.form__btn {
+    margin-top: 30px;
+}

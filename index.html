@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с формами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="visible">
+                <img class="visible__img" src="img/snow ball.png" id="snowBall" alt="Снежный шар">
+                <div class="visible_text">Кликни на шар</div>
+            </div>
+            <div class="hidden" id="hidden">
+                <div class="hidden__content"></div>
+                <img src="img/snowman.png" alt="" class="hidden__img">
+                <h2 id="name"></h2>
+                <div class="hidden_text">
+                    В переулке под фонарною, белесою луной,<br>
+                    Хоровод водили девочки-снежинки,<br>
+                    В проводах резвился ветер, ах, мальчишка озорной,<br>
+                    Крыш оркестр играл на этой вечеринке,<br>
+                    С неба сыпал жемчуг щедрый капельмейстер-небосвод,<br>
+                    И дома друг другу окнами моргали,<br>
+                    Прошлогодний лист ворвался в Новый год,<br>
+                    И ему снежинки в вальсе помогали,<br>
+                    Полусонный город мерно, в такт покачивал мосты,<br>
+                    На щеках зари лишь проступал румянец,<br>
+                    И покуда мостовые будут все еще пусты,<br>
+                    Будет вечно длиться этот белый танец!<br>
+                </div>
+            </div>
+            <form class="form" id="myForm">
+                <div class="form__row">
+                    <div class="input__name">Имя</div><input type="text" name="username">
+                </div>
+                <div class="form__row">
+                    <div class="input__name">Цвет текста</div> <input type="text" name="textColor">
+                </div>
+                <div class="form__row">
+                    <div class="input__name">Размер текста</div> <input type="text" name="textSize">
+                </div>
+                <input type="checkbox" class="type">Убрать отступы у заголовка
+                <button class="btn" name="btn">Применить</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
